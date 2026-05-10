@@ -11,7 +11,7 @@ Interface:
 ## Where to look
 
 - `bb_spatial.h`  
-  quantization + Morton encoding (world → grid → 1D)
+  quantization + octree + Morton encoding (world → grid → 1D)
 
 - `audio_engine.h`  
   real-time pipeline (miniaudio + FFT convolution + IR blending)
