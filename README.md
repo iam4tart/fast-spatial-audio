@@ -42,5 +42,7 @@ Context: https://4t-audio.vercel.app/blog/fast-spatial-audio
 Build:
 
 ```bash
-mkdir build && cd build
-cmake .. && cmake --build . --config Release
+mkdir build
+cmake -B build && cmake --build build
+.\build\Debug\app.exe
+```
