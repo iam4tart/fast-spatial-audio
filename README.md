@@ -2,9 +2,11 @@
 
 Experiment: map 3D space → Morton (1D memory) → drive simple real-time audio response.
 
-Context: https://4t-audio.vercel.app/blog/fast-spatial-audio
+Context: [THINKING BLOG](https://4t-audio.vercel.app/blog/fast-spatial-audio)
 
+Interface:
 
+![Interface](/images/interface.png)
 
 ## Where to look
 
