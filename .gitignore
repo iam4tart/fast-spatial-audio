@@ -1,0 +1,35 @@
+# build
+/build/
+/build-*/
+/cmake-build-*/
+
+# cmake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# binaries
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+
+# obj
+*.o
+*.obj
+*.pdb
+*.ilk
+
+# VS
+.vs/
+*.vcxproj*
+*.sln
+
+# logs
+*.log
+
+# misc
+.DS_Store
