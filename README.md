@@ -48,3 +48,5 @@ mkdir build
 cmake -B build && cmake --build build
 .\build\Debug\app.exe
 ```
+
+> NOTE: If build fails: system deps (GLFW/OpenGL) may be missing — local setup assumed for now.
