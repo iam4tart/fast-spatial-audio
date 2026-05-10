@@ -34,14 +34,14 @@ Interface:
 
 ## Open questions
 
-- Is Morton layout useful here or unnecessary?
-- Is IR blending a reasonable spatial model?
-- Better way to couple spatial structure → audio?
+- Does mapping space with Morton order make sense here, or is it premature?
+- Is dual-IR blending a reasonable approximation for spatial transitions?
+- Is there a better way to connect spatial structure to audio behavior?
 - Any obvious issues in DSP / threading?
 
 
 
-Build:
+## Build
 
 ```bash
 mkdir build
