@@ -6,8 +6,8 @@ Context: [THINKING BLOG](https://4t-audio.vercel.app/blog/fast-spatial-audio)
 
 Interface:
 
-<!-- ![Interface](/images/interface.png) -->
-<video src="images/demo.mp4" controls="controls" muted="muted" style="max-width: 100%;"></video>
+![Interface](/images/interface.png)
+<!-- <video src="images/demo.mp4" controls="controls" muted="muted" style="max-width: 100%;"></video> -->
 
 ## Where to look
 
