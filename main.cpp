@@ -151,7 +151,7 @@ static void drawPanelListener(App& a, int winH) {
 
     ImGui::TextDisabled("LISTENER"); ImGui::Separator();
     ImGui::Text("Pos   %.1f, %.1f, %.1f m", a.lx,a.ly,a.lz);
-    uint32_t m = bb::morton_encode(bb::world_to_grid(a.lx,WORLD,1024), bb::world_to_grid(a.ly,WORLD,1024), bb::world_to_grid(a.lz,WORLD,1024));
+    uint32_t m = bb::morton_encode(bb::world2grid(a.lx,WORLD,1024), bb::world2grid(a.ly,WORLD,1024), bb::world2grid(a.lz,WORLD,1024));
     ImGui::Spacing(); ImGui::TextDisabled("MORTON CODE"); ImGui::TextColored(ImVec4(1.f,0.80f,0.18f,1.f), "0x%08X", m);
     
     ImGui::Spacing(); ImGui::TextDisabled("bit layout  [x y z  x y z ...]");
@@ -323,7 +323,7 @@ int main() {
 
         app.cam.tx=app.lx; app.cam.ty=app.ly; app.cam.tz=app.lz;
 
-        uint32_t m = bb::morton_encode(bb::world_to_grid(app.lx,WORLD,1024), bb::world_to_grid(app.ly,WORLD,1024), bb::world_to_grid(app.lz,WORLD,1024));
+        uint32_t m = bb::morton_encode(bb::world2grid(app.lx,WORLD,1024), bb::world2grid(app.ly,WORLD,1024), bb::world2grid(app.lz,WORLD,1024));
         auto t0=std::chrono::high_resolution_clock::now(); app.leaf = app.tree.find(m);
         auto t1=std::chrono::high_resolution_clock::now();
         

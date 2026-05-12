@@ -33,3 +33,5 @@ Makefile
 
 # misc
 .DS_Store
+
+og_bb_spatial.h
